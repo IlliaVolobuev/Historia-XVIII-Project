@@ -9,6 +9,9 @@
   --blue-3: #89dcf0;
   --dark-blue: #142a3a;
   --green-accent: #629a34;
+    /* Цвета для польского флага */
+  --poland-white: #ffffff;   /* верхняя белая часть */
+  --poland-red: #dc143c;     /* нижняя красная часть */
 
   /* ===== Светлая тема (по умолчанию) ===== */
   --color-bg: #ffffff;
@@ -56,6 +59,7 @@
   --shadow-sm: 0 0 6px rgba(99, 228, 251, 0.15);
   --shadow-md: 0 0 12px rgba(4, 173, 220, 0.25);
   --shadow-lg: 0 0 22px rgba(4, 173, 220, 0.45);
+  --shadow-xxl: 0 0 32px rgba(4, 173, 220, 0.65);
 
   /* Неоновые градиенты */
   --gradient-main: linear-gradient(

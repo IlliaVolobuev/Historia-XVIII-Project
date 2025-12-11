@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 
-import Hero from "./components/Hero";
+import Hero from "./components/Hero/Hero";
 import Population from "./components/Population";
 import Inventions from "./components/Inventions";
 import Transport from "./components/Transport";

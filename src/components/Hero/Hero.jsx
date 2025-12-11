@@ -1,3 +1,6 @@
+import WordAppear from "../UI/WordAppear/WordAppear";
+import "../../index.css";
+import "./Hero.css";
 export default function Hero() {
   return (
     <section className="section-gradient" id="hero">
@@ -7,16 +10,21 @@ export default function Hero() {
             fontSize: "3rem",
             fontWeight: "800",
             marginBottom: "1rem",
-            color: "var(--dark-blue)", // контраст с градиентом
             textShadow: "0 2px 6px rgba(0,0,0,0.15)",
           }}
         >
-          XVIII wiek: kiedy ludzkość powiedziała
+          <WordAppear
+            style={{ color: "var(--poland-white)" }}
+            text="XVIII wiek: kiedy ludzkość powiedziała"
+          />
           <br />
-          <span style={{ color: "var(--color-bg)" }}>„DOŚĆ koniom!”</span>  
-          i włączyła tryb TURBO
+          <WordAppear style={{ color: "var(--poland-red)" }} text="DOŚĆ koniom! i włączyła tryb TURBO" />
         </h1>
-
+        <img
+          src="/src/assets/images/hero.png"
+          alt="hero"
+          className="img-hero"
+        />
         <p
           style={{
             fontSize: "1.25rem",
@@ -32,9 +40,9 @@ export default function Hero() {
           XVIII stulecie przyniosło Europie dynamiczny wzrost ludności,
           rewolucję agrarną oraz narodziny nowych technologii, które stały się
           fundamentem późniejszej rewolucji przemysłowej. Na polach pojawiły się
-          nowe maszyny rolnicze, w miastach powstawały manufaktury, a wynalazcy —
-          tacy jak James Watt — udoskonalali silnik parowy, który miał odmienić
-          świat.
+          nowe maszyny rolnicze, w miastach powstawały manufaktury, a wynalazcy
+          — tacy jak James Watt — udoskonalali silnik parowy, który miał
+          odmienić świat.
           <br />
           <br />
           To także epoka Oświecenia: rozwój nauki, popularyzacja Encyklopedii,
