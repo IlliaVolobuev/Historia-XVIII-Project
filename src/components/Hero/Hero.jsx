@@ -1,6 +1,7 @@
 import WordAppear from "../UI/WordAppear/WordAppear";
 import "../../index.css";
 import "./Hero.css";
+import NeonLine from "../UI/NeonLine/NeonLine";
 export default function Hero() {
   return (
     <section className="section-gradient" id="hero">
@@ -18,13 +19,17 @@ export default function Hero() {
             text="XVIII wiek: kiedy ludzkość powiedziała"
           />
           <br />
-          <WordAppear style={{ color: "var(--poland-red)" }} text="DOŚĆ koniom! i włączyła tryb TURBO" />
+          <WordAppear
+            style={{ color: "var(--poland-red)" }}
+            text="DOŚĆ koniom! i włączyła tryb TURBO"
+          />
         </h1>
         <img
           src="/src/assets/images/hero.png"
           alt="hero"
           className="img-hero"
         />
+        <NeonLine />
         <p
           style={{
             fontSize: "1.25rem",
@@ -51,7 +56,7 @@ export default function Hero() {
           świecie ministerstwo oświaty, a myśliciele tacy jak Hugo Kołłątaj i
           Stanisław Staszic pracowali nad modernizacją kraju.
         </p>
-
+        <NeonLine />
         <p
           style={{
             marginTop: "1.5rem",

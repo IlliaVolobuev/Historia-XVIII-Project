@@ -11,7 +11,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Header />
-      <main style={{ padding: "2rem" }}>
+      <main style={{ padding: "1rem" }}>
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/population" element={<Population />} />
