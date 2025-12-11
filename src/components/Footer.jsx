@@ -1,6 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="footer"
+    <footer
+      className="footer"
       style={{
         padding: "2rem",
         textAlign: "center",
@@ -9,13 +10,12 @@ export default function Footer() {
         borderTop: "1px solid var(--color-primary-soft)",
       }}
     >
-      <p>Автор сайта: ИЛЬЯ</p>
-      <p>Год: 2025</p>
+      <p>Autorzy strony: Illia Volobuiev i Kiryl Tolochko</p>
+      <p>Rok: 2025</p>
 
       <a href="#header" className="btn-accent" style={{ marginTop: "1rem" }}>
-        Наверх
+        Na górę
       </a>
     </footer>
   );
 }
-

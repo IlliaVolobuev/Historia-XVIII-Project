@@ -9,7 +9,7 @@ export default function ThemeToggle() {
 
   return (
     <button className="theme-toggle" onClick={() => setIsDark(!isDark)}>
-      {isDark ? "Светлая" : "Тёмная"}
+      {isDark ? "Jasny" : "Ciemny"}
     </button>
   );
 }
