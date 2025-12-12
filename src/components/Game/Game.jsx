@@ -84,21 +84,26 @@ export default function Game() {
   // -----------------------------
   // КОЛЛИЗИИ — ОТДЕЛЬНО
   // -----------------------------
-  useEffect(() => {
-    if (gameOver) return;
+useEffect(() => {
+  if (gameOver) return;
 
-    enemies.forEach((e) => {
-      const collide =
-        playerPos.x < e.x + 50 &&
-        playerPos.x + 50 > e.x &&
-        playerPos.y < e.y + 50 &&
-        playerPos.y + 50 > e.y;
+  const playerWidth = 100;   // ширина картинки игрока
+  const playerHeight = 150;  // высота картинки игрока
+  const enemyWidth = 50;     // ширина врага
+  const enemyHeight = 50;    // высота врага
 
-      if (collide) {
-        setGameOver(true);
-      }
-    });
-  }, [playerPos, enemies, gameOver]);
+  enemies.forEach((e) => {
+    const collide =
+      playerPos.x < e.x + enemyWidth &&
+      playerPos.x + playerWidth > e.x &&
+      playerPos.y < e.y + enemyHeight &&
+      playerPos.y + playerHeight > e.y;
+
+    if (collide) {
+      setGameOver(true);
+    }
+  });
+}, [playerPos, enemies, gameOver]);
 
   // -----------------------------
   // РЕНДЕР
