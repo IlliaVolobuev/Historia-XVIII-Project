@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import bgImage from "../../assets/images/fon3.webp";
+
 import "./Background.css";
 
 export default function Background() {

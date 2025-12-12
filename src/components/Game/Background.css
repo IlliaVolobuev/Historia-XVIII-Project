@@ -4,7 +4,7 @@
   left: 0;
   width: 1200px;    /* ширина блока */
   height: 420px;    /* высота блока */
-  background-image: url('../../assets/images/fon3.webp');
+  background-image: url('../../assets/images/fon2.webp');
   background-repeat: repeat-x;
   background-size: auto 100%; /* высота = 100%, ширина авто */
 }
