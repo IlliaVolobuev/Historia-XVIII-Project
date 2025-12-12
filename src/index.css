@@ -112,6 +112,7 @@ a:hover {
 .btn-accent {
   background: var(--gradient-accent);
   color: var(--color-bg);
+  border-radius: 0.5rem;
   box-shadow: var(--shadow-md);
   padding: 10px;
 }

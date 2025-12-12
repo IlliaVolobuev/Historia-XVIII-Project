@@ -1,29 +1,17 @@
-import React, { useEffect, useRef } from "react";
-
+import React from "react";
 import "./Background.css";
+import bg1 from "../../assets/images/fon1.webp";
+import bg2 from "../../assets/images/fon2.webp";
+import bg3 from "../../assets/images/fon3.webp";
+import bg4 from "../../assets/images/fon4.webp";
 
-export default function Background() {
-  const bgRef = useRef(null);
+const backgrounds = [bg1, bg2, bg3, bg4];
 
-  useEffect(() => {
-    let x = 0;
-    const speed = 2; // скорость прокрутки
-    let animationFrame;
-
-    const move = () => {
-      x -= speed;
-      if (!bgRef.current) return;
-
-      // повторяем фон бесконечно
-      bgRef.current.style.backgroundPosition = `${x}px 0`;
-
-      animationFrame = requestAnimationFrame(move);
-    };
-
-    move();
-
-    return () => cancelAnimationFrame(animationFrame);
-  }, []);
-
-  return <div className="background" ref={bgRef} />;
+export default function Background({ bgIndex }) {
+  return (
+    <div
+      className="background"
+      style={{ backgroundImage: `url(${backgrounds[bgIndex]})` }}
+    />
+  );
 }

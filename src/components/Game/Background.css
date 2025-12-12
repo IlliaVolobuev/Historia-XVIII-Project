@@ -1,10 +1,17 @@
 .background {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 1200px;    /* ширина блока */
-  height: 420px;    /* высота блока */
-  background-image: url('../../assets/images/fon2.webp');
+  inset: 0;
   background-repeat: repeat-x;
-  background-size: auto 100%; /* высота = 100%, ширина авто */
+  background-size: cover; /* или auto 100% если нужно */
+  animation: scroll-bg 8s linear infinite;
+  z-index: -1; /* чтобы фон был позади */
+}
+
+@keyframes scroll-bg {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -1200px; /* = ширина фонового изображения */
+  }
 }

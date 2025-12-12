@@ -14,6 +14,10 @@ export default function Game() {
 
   const gameAreaRef = useRef(null);
 
+
+ const bgIndex = Math.floor(passedEnemies / 10) % 4;
+
+
   // -----------------------------
   // УПРАВЛЕНИЕ ИГРОКОМ
   // -----------------------------
@@ -70,17 +74,19 @@ export default function Game() {
 useEffect(() => {
   if (gameOver) return;
 
-  const interval = setInterval(() => {
+  let animationFrameId;
+
+  const moveEnemies = () => {
     setEnemies((prevEnemies) => {
       const newEnemies = [];
       let passedCount = 0;
 
       prevEnemies.forEach((e) => {
-        const newX = e.x - 5;
+        const newX = e.x - 5; // скорость движения
         if (newX > -50) {
           newEnemies.push({ ...e, x: newX });
         } else {
-          passedCount += 1; // увеличиваем счётчик только один раз
+          passedCount += 1;
         }
       });
 
@@ -88,10 +94,15 @@ useEffect(() => {
 
       return newEnemies;
     });
-  }, 30);
 
-  return () => clearInterval(interval);
+    animationFrameId = requestAnimationFrame(moveEnemies);
+  };
+
+  animationFrameId = requestAnimationFrame(moveEnemies);
+
+  return () => cancelAnimationFrame(animationFrameId);
 }, [gameOver]);
+
 
   // -----------------------------
   // КОЛЛИЗИИ
@@ -99,8 +110,8 @@ useEffect(() => {
   useEffect(() => {
     if (gameOver) return;
 
-    const playerWidth = 100; // ширина игрока
-    const playerHeight = 150; // высота игрока
+    const playerWidth = 80; // ширина игрока
+    const playerHeight = 80; // высота игрока
     const enemyWidth = 50; // ширина врага
     const enemyHeight = 50; // высота врага
 
@@ -121,7 +132,9 @@ useEffect(() => {
   return (
     <div className="game-area" ref={gameAreaRef}>
       <Score value={passedEnemies} />
-      <Background />   
+    <Background bgIndex={bgIndex} />
+
+ 
       {gameOver ? (
         <GameOver />
       ) : (
