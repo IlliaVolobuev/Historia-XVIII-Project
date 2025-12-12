@@ -6,6 +6,8 @@ import Hero from "./components/Hero/Hero";
 import Population from "./components/Population";
 import Inventions from "./components/Inventions";
 import Transport from "./components/Transport";
+import TakeTest from "./components/TakeTest/TakeTest";
+import Game from "./components/Game/Game";
 import Footer from "./components/Footer";
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
           <Route path="/population" element={<Population />} />
           <Route path="/inventions" element={<Inventions />} />
           <Route path="/transport" element={<Transport />} />
+          <Route path="/test" element={<TakeTest />} />
+          <Route path="/game" element={<Game />} />
         </Routes>
       </main>
       <Footer />

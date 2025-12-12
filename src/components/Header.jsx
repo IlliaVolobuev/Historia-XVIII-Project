@@ -25,6 +25,8 @@ export default function Header() {
         <Link to="/population">Wzrost ludności</Link>
         <Link to="/inventions">Wynalazki</Link>
         <Link to="/transport">Transport i komunikacja</Link>
+        <Link to="/test">Zdać test</Link>
+        <Link to="/game">Gra</Link>
       </nav>
       <button className="theme-toggle" onClick={toggleTheme}>
         {dark ? "Jasny motyw" : "Ciemny motyw"}
