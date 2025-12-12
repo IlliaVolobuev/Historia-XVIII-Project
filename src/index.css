@@ -113,9 +113,11 @@ a:hover {
   background: var(--gradient-accent);
   color: var(--color-bg);
   box-shadow: var(--shadow-md);
+  padding: 10px;
 }
 .btn-accent:hover {
   box-shadow: var(--shadow-lg);
+  color: var(--color-bg);
 }
 
 /*====Кнопка переключения темы====*/
