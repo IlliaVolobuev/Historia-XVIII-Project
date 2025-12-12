@@ -6,7 +6,7 @@ export default function Footer() {
         padding: "2rem",
         textAlign: "center",
         background: "var(--color-bg-card)",
-        marginTop: "4rem",
+        marginTop: "3rem",
         borderTop: "1px solid var(--color-primary-soft)",
       }}
     >
