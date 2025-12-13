@@ -9,9 +9,9 @@
   --blue-3: #89dcf0;
   --dark-blue: #142a3a;
   --green-accent: #629a34;
-    /* Цвета для польского флага */
-  --poland-white: #ffffff;   /* верхняя белая часть */
-  --poland-red: #dc143c;     /* нижняя красная часть */
+  /* Цвета для польского флага */
+  --poland-white: #ffffff; /* верхняя белая часть */
+  --poland-red: #dc143c; /* нижняя красная часть */
 
   /* ===== Светлая тема (по умолчанию) ===== */
   --color-bg: #ffffff;
@@ -30,7 +30,8 @@
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.09);
   --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.14);
-
+  --text-shadow-main: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --text-shadow-heavy: 9px 11px 8px rgb(23 28 29 / 45%);
   /* Градиенты */
   --gradient-main: linear-gradient(
     135deg,
@@ -60,7 +61,9 @@
   --shadow-md: 0 0 12px rgba(4, 173, 220, 0.25);
   --shadow-lg: 0 0 22px rgba(4, 173, 220, 0.45);
   --shadow-xxl: 0 0 32px rgba(4, 173, 220, 0.65);
-
+  --text-shadow-main: 0 0 8px rgba(99, 228, 251, 0.45);
+  --text-shadow-heavy: 9px 11px 8px rgb(23 28 29 / 45%);
+   --text-shadow-heavy: 9px 11px 8px rgba(4, 173, 220, 0.35);
   /* Неоновые градиенты */
   --gradient-main: linear-gradient(
     135deg,
