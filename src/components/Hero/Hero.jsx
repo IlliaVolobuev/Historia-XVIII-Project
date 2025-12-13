@@ -6,14 +6,7 @@ export default function Hero() {
   return (
     <section className="section-gradient" id="hero">
       <div style={{ textAlign: "center", maxWidth: "900px", margin: "0 auto" }}>
-        <h1
-          style={{
-            fontSize: "3rem",
-            fontWeight: "800",
-            marginBottom: "1rem",
-            textShadow: "0 2px 6px rgba(0,0,0,0.15)",
-          }}
-        >
+        <h1 className="h1-hero">
           <WordAppear
             style={{ color: "var(--poland-white)" }}
             text="XVIII wiek: kiedy ludzkość powiedziała"
@@ -30,18 +23,7 @@ export default function Hero() {
           className="img-hero"
         />
         <NeonLine />
-        <p
-          style={{
-            fontSize: "1.25rem",
-            lineHeight: "1.7",
-            background: "rgba(255,255,255,0.35)",
-            padding: "1.4rem 1.8rem",
-            borderRadius: "14px",
-            boxShadow: "var(--shadow-md)",
-            fontWeight: 500,
-            color: "var(--dark-blue)",
-          }}
-        >
+        <p className="p-hero">
           XVIII stulecie przyniosło Europie dynamiczny wzrost ludności,
           rewolucję agrarną oraz narodziny nowych technologii, które stały się
           fundamentem późniejszej rewolucji przemysłowej. Na polach pojawiły się
