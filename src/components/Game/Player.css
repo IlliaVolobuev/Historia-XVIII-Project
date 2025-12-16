@@ -1,0 +1,8 @@
+.player {
+  position: absolute;
+  width: 150px;
+  height:182px;
+ background-image: url('../../assets/images/ball.png');
+ 
+}
+

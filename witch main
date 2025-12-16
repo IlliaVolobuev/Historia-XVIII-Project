@@ -1,0 +1,186 @@
+[33mcommit 1a48aaacc269ab755b4c4134051523ba337df8e3[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Illia <135041280+IlliaVolobuev@users.noreply.github.com>
+Date:   Mon Dec 15 13:27:52 2025 +0100
+
+    Почти доделали транспорт, осталось догенерировать 4-5 картинок с gmini
+
+[33mcommit 8c21db6c44c0aa71f8d975ea1bebffc8331c16a0[m
+Author: Illia <135041280+IlliaVolobuev@users.noreply.github.com>
+Date:   Mon Dec 15 12:50:14 2025 +0100
+
+    Доделали 3 страницу
+
+[33mcommit a48200c15ed0e7f46cf04f51fa8acbfcdae08980[m[33m ([m[1;32mmain[m[33m)[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Mon Dec 15 01:36:46 2025 +0200
+
+    переделал Footer
+
+[33mcommit 16f2eb2722d6e1b8d064edf1ca995105771638fb[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Mon Dec 15 01:17:09 2025 +0200
+
+    дополнил разделы картинками
+
+[33mcommit bd86896089e311270de7f83f798f48dda00c19f9[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Mon Dec 15 00:18:49 2025 +0200
+
+    сделал градиенты. сделаладаптивные  размеры на игру под телефон
+
+[33mcommit 7dd7c56827e84a2e9fa71984d69138c7cc0f5e96[m
+Author: Illia <135041280+IlliaVolobuev@users.noreply.github.com>
+Date:   Sun Dec 14 21:59:32 2025 +0100
+
+    Закончили втрою страницу
+
+[33mcommit ef96b2927ac2b89c88abc2c6cc3d6eb565ad5692[m
+Author: Illia <135041280+IlliaVolobuev@users.noreply.github.com>
+Date:   Sun Dec 14 19:48:14 2025 +0100
+
+    переиминовка картинок
+
+[33mcommit 5bd43ad0a06b92e8108cb64f523154814771608b[m
+Author: Illia <135041280+IlliaVolobuev@users.noreply.github.com>
+Date:   Sat Dec 13 21:03:54 2025 +0100
+
+    Изменение популяции
+
+[33mcommit 4cb505eb746e2f62b0bdccaac05e53a6ded38253[m
+Author: Illia <135041280+IlliaVolobuev@users.noreply.github.com>
+Date:   Sat Dec 13 20:34:45 2025 +0100
+
+    тест переведен на польский
+
+[33mcommit 84b6797c2bf7b0afc9272a61e30ab5d09c21cb11[m
+Author: Illia <135041280+IlliaVolobuev@users.noreply.github.com>
+Date:   Sat Dec 13 20:30:16 2025 +0100
+
+    Поудаляли фотки
+
+[33mcommit f6f3d1d7f63b1d1048c391d50bc540cb7bc40a84[m
+Author: Illia <135041280+IlliaVolobuev@users.noreply.github.com>
+Date:   Sat Dec 13 20:17:23 2025 +0100
+
+    Обновлён Game.jsx из коммита 4f60275 (ветка illia)
+
+[33mcommit 1b5e5bc0bdea0cf532be626ff706f57980266c2e[m
+Author: Illia <135041280+IlliaVolobuev@users.noreply.github.com>
+Date:   Sat Dec 13 19:47:10 2025 +0100
+
+    готовая игра (с доп. тремя видами птиц)
+
+[33mcommit d3f182777c7a4365e07476980fb528652ca4f79e[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Sat Dec 13 20:55:57 2025 +0200
+
+    работа с цветами кнопки
+
+[33mcommit 3116f6458e945dbee756b025b59d668cb9ef7865[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Sat Dec 13 20:48:44 2025 +0200
+
+    работа с цветами кнопки
+
+[33mcommit 16fb37bd7826cd55828ec0c396d57052129dcaed[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Sat Dec 13 20:42:23 2025 +0200
+
+    менял цвета кнопки
+
+[33mcommit 504ee3bb89591a31bdc01aeaedaab81dcb7086fc[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Sat Dec 13 19:00:32 2025 +0200
+
+    добавил тест
+
+[33mcommit ae1c465e7214b266808335f127576e296e651c56[m
+Merge: 3ed101f 05d81c4
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Sat Dec 13 14:19:11 2025 +0200
+
+    Merge branch 'main' of https://github.com/IlliaVolobuev/Historia-XVIII-Project
+
+[33mcommit 3ed101faefb3a99e6e01034513ca2485e3c15e24[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Sat Dec 13 14:15:19 2025 +0200
+
+    поработал с цветами hero
+
+[33mcommit 05d81c4c3cb065fe97d688015925611e8a3825df[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Sat Dec 13 14:13:50 2025 +0200
+
+    поработал с цветами hero
+
+[33mcommit 552e6a52530ca63bf0903f33d204ec3d7326c223[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Sat Dec 13 01:12:15 2025 +0200
+
+    переделат отступы Header
+
+[33mcommit d9f355f88365944aa894c936e24eae1e6f07bd4e[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Sat Dec 13 01:01:32 2025 +0200
+
+    сделал смену фрна, сделал адаптив под телефон Header
+
+[33mcommit 5ce44478399d493ca285d21c386b51e4d85dc959[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Fri Dec 12 23:37:24 2025 +0200
+
+    добавил счетчик врагов
+
+[33mcommit cfeedf34c35a790929b122b70af1edf106bd118d[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Fri Dec 12 22:52:21 2025 +0200
+
+    добавил больше размеры на юнитов для коллизии
+
+[33mcommit 5c927d5db523e62318884ab86c9f309053834529[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Fri Dec 12 22:12:08 2025 +0200
+
+    игра
+
+[33mcommit f5d22a5f03a9526603dc45d19a00614fffbc34e1[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Fri Dec 12 19:30:01 2025 +0200
+
+    добавит ссылки на тест и игру, сделал роутеры
+
+[33mcommit 2ae86c95a0912af9ff3a0ef9e0aef204762afa36[m
+Author: Illia <135041280+IlliaVolobuev@users.noreply.github.com>
+Date:   Fri Dec 12 07:52:17 2025 +0100
+
+    маленкие изменения с кнопкой на верх
+
+[33mcommit 82a8802b50485968793847a18ba1b4330f1a124d[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Fri Dec 12 01:42:51 2025 +0200
+
+    добавил неоновые линии в header
+
+[33mcommit 4ddadc55cf0baa1e428639b6813faad9dc126f34[m
+Author: Alek <aleksandrvolobuev7676@gmail.com>
+Date:   Fri Dec 12 01:27:22 2025 +0200
+
+    вставил картинку. слелал динамический текст слелал подсветку ссылок
+
+[33mcommit 3e25e9d3a3756735c58656d1f34f902c58633cdd[m
+Author: Illia <135041280+IlliaVolobuev@users.noreply.github.com>
+Date:   Thu Dec 11 21:28:21 2025 +0100
+
+    попытка добавления анимации текста
+
+[33mcommit 0db28b0b9e16869f2ae8754bd0d1dbc0b224fc92[m
+Author: Illia <135041280+IlliaVolobuev@users.noreply.github.com>
+Date:   Thu Dec 11 21:14:30 2025 +0100
+
+    Титульная страница и перевод на польский
+
+[33mcommit 341beaa095fd258521123a878b7897d847dfb41a[m
+Author: Illia <135041280+IlliaVolobuev@users.noreply.github.com>
+Date:   Thu Dec 11 20:50:34 2025 +0100
+
+    Первый комит в правильном проекте

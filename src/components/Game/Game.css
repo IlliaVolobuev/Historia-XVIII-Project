@@ -1,0 +1,9 @@
+.game-area {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 420px;
+  overflow: hidden;
+  border: 2px solid black;
+}
+

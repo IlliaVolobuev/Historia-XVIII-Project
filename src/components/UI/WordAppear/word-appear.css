@@ -1,0 +1,24 @@
+.word-appear {
+  display: block;
+  max-width: 100ch;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+.word {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: wordFade 0.5s ease forwards;
+}
+
+.word-appear.in-view .word {
+  animation-play-state: running;
+}
+
+@keyframes wordFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,48 @@
+.img-hero {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  border: 4px solid var(--blue-1);
+  border-radius: 40px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease, border-color 0.45s ease, filter 0.45s ease;
+
+  display: block;
+  overflow: hidden;
+  filter: brightness(0.96);
+}
+
+/* Hover эффект */
+.img-hero:hover {
+  transform: scale(1.03);
+  border-color: var(--blue-2);
+  box-shadow: 0 20px 45px rgba(0, 162, 210, 0.25),
+    0 6px 15px rgba(0, 0, 0, 0.15);
+  filter: brightness(1);
+}
+
+/* ЛЁГКИЙ эффект внутреннего сияния */
+.img-hero:hover {
+  box-shadow: 0 20px 40px rgba(4, 173, 220, 0.25),
+    0 6px 15px rgba(0, 0, 0, 0.15), inset 0 0 25px rgba(99, 228, 251, 0.35);
+}
+.h1-hero {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: var(--text-shadow-heavy);
+}
+.p-hero {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.7;
+  background: var(--color-primary-soft);
+  padding: 1.4rem 1.8rem;
+  border-radius: 14px;
+  box-shadow: var(--shadow-md);
+  color: var(--dark-blue);
+  text-shadow: var(--text-shadow-heavy);
+}
+
+

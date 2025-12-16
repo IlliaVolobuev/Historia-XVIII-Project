@@ -1,0 +1,22 @@
+.neon-line {
+  width: 100%;
+  height: 4px; /* толщина линии */
+  border-radius: 2px;
+  background: var(--color-primary);
+  box-shadow: 
+    0 0 6px var(--color-primary),
+    0 0 12px var(--color-primary-light),
+    0 0 20px var(--color-primary-light);
+  margin: 2rem 0; /* отступ сверху и снизу */
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover эффект — линия светится ярче */
+.neon-line:hover {
+  box-shadow: 
+    0 0 8px var(--color-primary),
+    0 0 16px var(--color-primary-light),
+    0 0 28px var(--color-primary-light);
+}
