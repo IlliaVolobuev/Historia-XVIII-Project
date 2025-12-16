@@ -1,7 +1,14 @@
+import React from "react";
 import WordAppear from "../UI/WordAppear/WordAppear";
+import NeonLine from "../UI/NeonLine/NeonLine";
 import "../../index.css";
 import "./Population.css";
-import NeonLine from "../UI/NeonLine/NeonLine";
+
+// Импортируем картинки через React
+import potatoImg from "../../assets/images/potato.png";
+import doctorRowImg from "../../assets/images/Doctor-row.png";
+import city1Img from "../../assets/images/city1.png";
+import city2Img from "../../assets/images/city2.png";
 
 export default function Population() {
   return (
@@ -17,12 +24,11 @@ export default function Population() {
             text="Wzrost ludności i przemiany społeczne XVIII wieku"
           />
         </h1>
-        <img
-          src="/src/assets/images/potato.png"
-          alt="hero"
-          className="img-hero"
-        />
+
+        {/* Картинки через импорт */}
+        <img src={potatoImg} alt="hero" className="img-hero" />
         <NeonLine />
+
         <p className="p-hero">
           XVIII wiek przyniósł gwałtowny wzrost liczby ludności, który stał się
           jednym z najważniejszych czynników rewolucji przemysłowej. Poprawa
@@ -32,12 +38,10 @@ export default function Population() {
           się rozrastały.
         </p>
         <NeonLine />
-        <img
-          src="/src/assets/images/Doctor-row.png"
-          alt="hero"
-          className="img-hero"
-        />
+
+        <img src={doctorRowImg} alt="hero" className="img-hero" />
         <NeonLine />
+
         <p className="p-hero">
           Postęp techniczny miał bezpośredni wpływ na procesy demograficzne.
           Nowe narzędzia rolnicze i lepsza organizacja produkcji zwiększyły
@@ -48,12 +52,10 @@ export default function Population() {
           szpitali, wodociągów ani skuteczna walka z epidemiami.
         </p>
         <NeonLine />
-        <img
-          src="/src/assets/images/city1.png"
-          alt="hero"
-          className="img-hero"
-        />
+
+        <img src={city1Img} alt="hero" className="img-hero" />
         <NeonLine />
+
         <p className="p-hero">
           Szybki przyrost ludności doprowadził do głębokich zmian społecznych.
           Na wsi pojawiła się nadwyżka ludności, której rolnictwo nie było w
@@ -72,12 +74,10 @@ export default function Population() {
           niósł też wyzysk i brak zabezpieczeń socjalnych.
         </p>
         <NeonLine />
-        <img
-          src="/src/assets/images/city2.png"
-          alt="hero"
-          className="img-hero"
-        />
+
+        <img src={city2Img} alt="hero" className="img-hero" />
         <NeonLine />
+
         <p className="p-hero">
           Postępowi technicznemu towarzyszyły liczne sprzeczności. Z jednej
           strony poprawiał on poziom życia i umożliwiał rozwój gospodarczy, z

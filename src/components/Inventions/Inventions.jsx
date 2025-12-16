@@ -1,7 +1,16 @@
+import React from "react";
 import WordAppear from "../UI/WordAppear/WordAppear";
+import NeonLine from "../UI/NeonLine/NeonLine";
 import "../../index.css";
 import "./Inventions.css";
-import NeonLine from "../UI/NeonLine/NeonLine";
+
+// Импортируем картинки через React
+import wattImg from "../../assets/images/Watt.png";
+import englandImg from "../../assets/images/England-Rev.jpg";
+import fabricMachineImg from "../../assets/images/Fabric-machine.jpg";
+import glassImg from "../../assets/images/glass.jpg";
+import warImg from "../../assets/images/war.png";
+import islandImg from "../../assets/images/island.jpg";
 
 export default function Inventions() {
   return (
@@ -17,12 +26,10 @@ export default function Inventions() {
             text="Wynalazki i przemysł – techniczny motor rewolucji"
           />
         </h1>
-        <img
-          src="/src/assets/images/Watt.png"
-          alt="hero"
-          className="img-hero"
-        />
+
+        <img src={wattImg} alt="hero" className="img-hero" />
         <NeonLine />
+
         <p className="p-hero">
           XVIII wiek był epoką przełomowych wynalazków, które zmieniły sposób
           produkcji i funkcjonowania gospodarki. Najważniejszym z nich była
@@ -33,12 +40,10 @@ export default function Inventions() {
           bez przerwy.
         </p>
         <NeonLine />
-        <img
-          src="/src/assets/images/England-Rev.jpg"
-          alt="hero"
-          className="img-hero"
-        />
+
+        <img src={englandImg} alt="hero" className="img-hero" />
         <NeonLine />
+
         <p className="p-hero">
           To właśnie Anglia stała się centrum początku rewolucji przemysłowej,
           ponieważ łączyła kilka istotnych czynników: szybki wzrost ludności,
@@ -49,12 +54,10 @@ export default function Inventions() {
           warunków życia w miastach przemysłowych.
         </p>
         <NeonLine />
-        <img
-          src="/src/assets/images/Fabric-machine.jpg"
-          alt="hero"
-          className="img-hero"
-        />
+
+        <img src={fabricMachineImg} alt="hero" className="img-hero" />
         <NeonLine />
+
         <p className="p-hero">
           Jedną z pierwszych i najważniejszych gałęzi industrializacji był
           przemysł włókienniczy. Produkcja tkanin odpowiadała na podstawowe
@@ -63,12 +66,10 @@ export default function Inventions() {
           sektor liderem przemian przemysłowych.
         </p>
         <NeonLine />
-        <img
-          src="/src/assets/images/glass.jpg"
-          alt="hero"
-          className="img-hero"
-        />
+
+        <img src={glassImg} alt="hero" className="img-hero" />
         <NeonLine />
+
         <p className="p-hero">
           Wcześniejszą formą produkcji były manufaktury, które różniły się od
           średniowiecznych warsztatów rzemieślniczych skalą i organizacją pracy.
@@ -78,12 +79,10 @@ export default function Inventions() {
           rzemiosłem a systemem fabrycznym.
         </p>
         <NeonLine />
-        <img
-          src="/src/assets/images/war.png"
-          alt="hero"
-          className="img-hero"
-        />
+
+        <img src={warImg} alt="hero" className="img-hero" />
         <NeonLine />
+
         <p className="p-hero">
           Postęp techniczny miał również znaczenie dla wojskowości. Masowa
           produkcja broni, lepsza logistyka i nowe technologie zwiększyły
@@ -93,12 +92,10 @@ export default function Inventions() {
           handlu światowego.
         </p>
         <NeonLine />
-        <img
-          src="/src/assets/images/island.jpg"
-          alt="hero"
-          className="img-hero"
-        />
+
+        <img src={islandImg} alt="hero" className="img-hero" />
         <NeonLine />
+
         <p className="p-hero">
           Techniczne innowacje XVIII wieku uznaje się za globalny przełom,
           ponieważ ich skutki szybko rozprzestrzeniły się poza Europę.
