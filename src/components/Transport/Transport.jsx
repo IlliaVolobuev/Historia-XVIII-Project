@@ -30,7 +30,7 @@ export default function Transport() {
         <img src={transport1Img} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-hero">
+        <p className="p-section">
           Rozwój transportu był niezbędnym warunkiem industrializacji XVIII
           wieku. Bez sprawnego przemieszczania surowców, towarów i ludzi
           niemożliwa byłaby produkcja na dużą skalę. Rosnące miasta i fabryki

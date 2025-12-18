@@ -117,14 +117,12 @@ a:hover {
 
 /*====Кнопка переключения темы====*/
 .theme-toggle {
-  background: var(--color-bg-card);
-  color: var(--color-text);
-  padding: 0.4em 1em;
-  border-radius: 6px;
+  padding: calc(0.3em + (0.4 - 0.3) * ((100vw - 320px) / (1920 - 320)))
+    calc(0.8em + (1 - 0.8) * ((100vw - 320px) / (1920 - 320)));
+  border-radius: calc(4px + (6 - 4) * ((100vw - 320px) / (1920 - 320)));
   border: 1px solid var(--color-primary);
-  cursor: pointer;
-  transition: 0.3s;
 }
+
 .theme-toggle:hover {
   background: var(--color-primary-soft);
   color: var(--dark-blue);
@@ -136,15 +134,19 @@ a:hover {
 .card-glow {
   background: var(--color-bg-soft);
   border: 1px solid var(--color-primary);
-  border-radius: 0.4rem;
-  box-shadow: 0 0 14px rgba(99, 228, 251, 0.4);
+  border-radius: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
+  box-shadow: 0 0 calc(8px + (14 - 8) * ((100vw - 320px) / (1920 - 320)))
+    rgba(99, 228, 251, 0.4);
 }
+
 /*Градиентные блоки / секции*/
+
 .section-gradient {
-  padding: 4rem 0.5rem;
+  padding: calc(2rem + (4 - 2) * ((100vw - 320px) / (1920 - 320)))
+    calc(0.4rem + (0.5 - 0.4) * ((100vw - 320px) / (1920 - 320)));
   background: var(--gradient-main);
   color: var(--dark-blue);
-  border-radius: 12px;
+  border-radius: calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320)));
   box-shadow: var(--shadow-lg);
 }
 
@@ -155,14 +157,14 @@ a:hover {
 }
 .img-section {
   width: 100%;
-  max-width: 1200px;
-  margin: 2rem auto;
-  border: 4px solid var(--blue-1);
-  border-radius: 40px;
+  max-width: calc(320px + (1200 - 320) * ((100vw - 320px) / (1920 - 320)));
+  margin: calc(1rem + (2 - 1) * ((100vw - 320px) / (1920 - 320))) auto;
+  border: calc(2px + (4 - 2) * ((100vw - 320px) / (1920 - 320))) solid
+    var(--blue-1);
+  border-radius: calc(18px + (40 - 18) * ((100vw - 320px) / (1920 - 320)));
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
   transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.45s ease, border-color 0.45s ease, filter 0.45s ease;
-
   display: block;
   overflow: hidden;
   filter: brightness(0.96);
@@ -183,19 +185,21 @@ a:hover {
     0 6px 15px rgba(0, 0, 0, 0.15), inset 0 0 25px rgba(99, 228, 251, 0.35);
 }
 .h1-section {
-  font-size: 3rem;
+  font-size: calc(1.8rem + (3 - 1.8) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: calc(0.6rem + (1 - 0.6) * ((100vw - 320px) / (1920 - 320)));
   text-shadow: var(--text-shadow-heavy);
 }
-.p-section{
-   font-size: 1.25rem;
+
+.p-section {
+  font-size: calc(1rem + (1.25 - 1) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 500;
-  line-height: 1.7;
-  background: var(--color-primary-soft);
-  padding: 1.4rem 1.8rem;
-  border-radius: 14px;
+  line-height: calc(1.5 + (1.7 - 1.5) * ((100vw - 320px) / (1920 - 320)));
+  padding: calc(0.9rem + (1.4 - 0.9) * ((100vw - 320px) / (1920 - 320)))
+    calc(1.1rem + (1.8 - 1.1) * ((100vw - 320px) / (1920 - 320)));
+  border-radius: calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320)));
   box-shadow: var(--shadow-md);
   color: var(--dark-blue);
+  background-color: var(--color-primary-soft);
   text-shadow: var(--text-shadow-heavy);
 }
