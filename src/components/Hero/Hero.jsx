@@ -10,8 +10,8 @@ import heroImg from "../../assets/images/hero.png";
 export default function Hero() {
   return (
     <section className="section-gradient" id="hero">
-      <div style={{ textAlign: "center", maxWidth: "900px", margin: "0 auto" }}>
-        <h1 className="h1-hero">
+      <div className="div-section">
+        <h1 className="h1-section">
           <WordAppear
             style={{ color: "var(--poland-white)" }}
             text="XVIII wiek: kiedy ludzkość powiedziała"
@@ -23,12 +23,12 @@ export default function Hero() {
         </h1>
 
         {/* Картинка теперь через импорт */}
-        <img src={heroImg} alt="hero" className="img-hero" />
+        <img src={heroImg} alt="hero" className="img-section" />
 
         <NeonLine />
 
         <WordAppear
-          className="p-hero"
+          className="p-section"
           text={`     XVIII stulecie przyniosło Europie dynamiczny wzrost ludności,
           rewolucję agrarną oraz narodziny nowych technologii, które stały się
           fundamentem późniejszej rewolucji przemysłowej. Na polach pojawiły się

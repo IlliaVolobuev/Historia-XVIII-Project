@@ -19,18 +19,18 @@ export default function Inventions() {
       className="section-gradient"
       style={{ padding: "4rem 2rem" }}
     >
-      <div style={{ textAlign: "center", maxWidth: "900px", margin: "0 auto" }}>
-        <h1 className="h1-hero">
+       <div className="div-section">
+        <h1 className="h1-section">
           <WordAppear
             style={{ color: "var(--poland-white)" }}
             text="Wynalazki i przemysł – techniczny motor rewolucji"
           />
         </h1>
 
-        <img src={wattImg} alt="hero" className="img-hero" />
+        <img src={wattImg} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-hero">
+        <p className="p-section">
           XVIII wiek był epoką przełomowych wynalazków, które zmieniły sposób
           produkcji i funkcjonowania gospodarki. Najważniejszym z nich była
           maszyna parowa Jamesa Watta, uważana za kluczowy czynnik rewolucji
@@ -41,10 +41,10 @@ export default function Inventions() {
         </p>
         <NeonLine />
 
-        <img src={englandImg} alt="hero" className="img-hero" />
+        <img src={englandImg} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-hero">
+        <p className="p-section">
           To właśnie Anglia stała się centrum początku rewolucji przemysłowej,
           ponieważ łączyła kilka istotnych czynników: szybki wzrost ludności,
           rozwinięty handel, stabilny system polityczny oraz dostęp do surowców,
@@ -55,10 +55,10 @@ export default function Inventions() {
         </p>
         <NeonLine />
 
-        <img src={fabricMachineImg} alt="hero" className="img-hero" />
+        <img src={fabricMachineImg} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-hero">
+        <p className="p-section">
           Jedną z pierwszych i najważniejszych gałęzi industrializacji był
           przemysł włókienniczy. Produkcja tkanin odpowiadała na podstawowe
           potrzeby szybko rosnącej ludności. Mechaniczne krosna i przędzarki
@@ -67,10 +67,10 @@ export default function Inventions() {
         </p>
         <NeonLine />
 
-        <img src={glassImg} alt="hero" className="img-hero" />
+        <img src={glassImg} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-hero">
+        <p className="p-section">
           Wcześniejszą formą produkcji były manufaktury, które różniły się od
           średniowiecznych warsztatów rzemieślniczych skalą i organizacją pracy.
           W manufakturach pracowało wielu robotników wykonujących
@@ -80,10 +80,10 @@ export default function Inventions() {
         </p>
         <NeonLine />
 
-        <img src={warImg} alt="hero" className="img-hero" />
+        <img src={warImg} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-hero">
+        <p className="p-section">
           Postęp techniczny miał również znaczenie dla wojskowości. Masowa
           produkcja broni, lepsza logistyka i nowe technologie zwiększyły
           możliwości armii i zmieniły sposób prowadzenia wojen. Industrializacja
@@ -93,10 +93,10 @@ export default function Inventions() {
         </p>
         <NeonLine />
 
-        <img src={islandImg} alt="hero" className="img-hero" />
+        <img src={islandImg} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-hero">
+        <p className="p-section">
           Techniczne innowacje XVIII wieku uznaje się za globalny przełom,
           ponieważ ich skutki szybko rozprzestrzeniły się poza Europę.
           Zapoczątkowały one procesy, które trwale zmieniły gospodarkę,

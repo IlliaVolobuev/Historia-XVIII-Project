@@ -17,8 +17,8 @@ export default function Population() {
       className="section-gradient"
       style={{ padding: "4rem 2rem" }}
     >
-      <div style={{ textAlign: "center", maxWidth: "900px", margin: "0 auto" }}>
-        <h1 className="h1-hero">
+      <div className="div-section">
+        <h1 className="h1-section">
           <WordAppear
             style={{ color: "var(--poland-white)" }}
             text="Wzrost ludności i przemiany społeczne XVIII wieku"
@@ -26,10 +26,10 @@ export default function Population() {
         </h1>
 
         {/* Картинки через импорт */}
-        <img src={potatoImg} alt="hero" className="img-hero" />
+        <img src={potatoImg} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-hero">
+        <p className="p-section">
           XVIII wiek przyniósł gwałtowny wzrost liczby ludności, który stał się
           jednym z najważniejszych czynników rewolucji przemysłowej. Poprawa
           wyżywienia, zwłaszcza rozpowszechnienie ziemniaka, a także rozwój
@@ -39,10 +39,10 @@ export default function Population() {
         </p>
         <NeonLine />
 
-        <img src={doctorRowImg} alt="hero" className="img-hero" />
+        <img src={doctorRowImg} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-hero">
+        <p className="p-section">
           Postęp techniczny miał bezpośredni wpływ na procesy demograficzne.
           Nowe narzędzia rolnicze i lepsza organizacja produkcji zwiększyły
           ilość żywności, co zmniejszyło ryzyko klęsk głodu. Jednocześnie rozwój
@@ -53,10 +53,10 @@ export default function Population() {
         </p>
         <NeonLine />
 
-        <img src={city1Img} alt="hero" className="img-hero" />
+        <img src={city1Img} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-hero">
+        <p className="p-section">
           Szybki przyrost ludności doprowadził do głębokich zmian społecznych.
           Na wsi pojawiła się nadwyżka ludności, której rolnictwo nie było w
           stanie utrzymać. Coraz więcej ludzi przenosiło się do miast, gdzie
@@ -75,10 +75,10 @@ export default function Population() {
         </p>
         <NeonLine />
 
-        <img src={city2Img} alt="hero" className="img-hero" />
+        <img src={city2Img} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-hero">
+        <p className="p-section">
           Postępowi technicznemu towarzyszyły liczne sprzeczności. Z jednej
           strony poprawiał on poziom życia i umożliwiał rozwój gospodarczy, z
           drugiej prowadził do biedy, nierówności i degradacji środowiska.

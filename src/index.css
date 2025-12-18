@@ -67,9 +67,9 @@
   --color-text: #f3f9ff;
   --color-text-soft: #d1e4ef;
 
-  --color-primary:var(--blue-5);
-  --color-primary-light:var(--blue-6);
-  --color-primary-soft:  var(--blue-1);
+  --color-primary: var(--blue-5);
+  --color-primary-light: var(--blue-6);
+  --color-primary-soft: var(--blue-1);
   --color-accent: var(--fiolent);
   --color-sekond: var(--blue-2);
 
@@ -115,38 +115,6 @@ a:hover {
   color: var(--color-primary-light);
 }
 
-/*======Стандартная кнопка=========*/
-
-.btn {
-  padding: 0.7em 1.4em;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  font-weight: 500;
-  color: var(--color-bg);
-  background: var(--gradient-main);
-  box-shadow: var(--shadow-md);
-  transition: 0.25s;
-}
-.btn:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
-}
-
-/*=======Акцентная зелёная кнопка======*/
-
-.btn-accent {
-  background: var(--gradient-accent);
-  color: var(--color-bg);
-  border-radius: 0.5rem;
-  box-shadow: var(--shadow-md);
-  padding: 10px;
-}
-.btn-accent:hover {
-  box-shadow: var(--shadow-lg);
-  color: var(--color-bg);
-}
-
 /*====Кнопка переключения темы====*/
 .theme-toggle {
   background: var(--color-bg-card);
@@ -163,18 +131,7 @@ a:hover {
 }
 
 /*Карточки*/
-/*===Общая карточка==*/
-.card {
-  background: var(--color-bg-card);
-  padding: 1.5rem;
-  border-radius: 14px;
-  box-shadow: var(--shadow-md);
-  transition: 0.3s;
-}
-.card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-4px);
-}
+
 /*===Неоновая карточка===*/
 .card-glow {
   background: var(--color-bg-soft);
@@ -184,9 +141,61 @@ a:hover {
 }
 /*Градиентные блоки / секции*/
 .section-gradient {
-  padding: 4rem 2rem;
+  padding: 4rem 0.5rem;
   background: var(--gradient-main);
   color: var(--dark-blue);
   border-radius: 12px;
   box-shadow: var(--shadow-lg);
+}
+
+.div-section {
+  text-align: center;
+  max-width: 1900px;
+  margin: 0 auto;
+}
+.img-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  border: 4px solid var(--blue-1);
+  border-radius: 40px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease, border-color 0.45s ease, filter 0.45s ease;
+
+  display: block;
+  overflow: hidden;
+  filter: brightness(0.96);
+}
+
+/* Hover эффект */
+.img-section:hover {
+  transform: scale(1.03);
+  border-color: var(--blue-2);
+  box-shadow: 0 20px 45px rgba(0, 162, 210, 0.25),
+    0 6px 15px rgba(0, 0, 0, 0.15);
+  filter: brightness(1);
+}
+
+/* ЛЁГКИЙ эффект внутреннего сияния */
+.img-section:hover {
+  box-shadow: 0 20px 40px rgba(4, 173, 220, 0.25),
+    0 6px 15px rgba(0, 0, 0, 0.15), inset 0 0 25px rgba(99, 228, 251, 0.35);
+}
+.h1-section {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: var(--text-shadow-heavy);
+}
+.p-section{
+   font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.7;
+  background: var(--color-primary-soft);
+  padding: 1.4rem 1.8rem;
+  border-radius: 14px;
+  box-shadow: var(--shadow-md);
+  color: var(--dark-blue);
+  text-shadow: var(--text-shadow-heavy);
 }
