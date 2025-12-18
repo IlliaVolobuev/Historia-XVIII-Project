@@ -21,7 +21,7 @@
 
   /* ===== Светлая тема (по умолчанию) ===== */
   --color-bg: #ffffff;
-  --color-bg-soft: #b8edfa;
+  --color-bg-soft: #63e4fb;
   --color-bg-card: #f0fafd;
   --color-bg-card2: #c5ebf7;
 
@@ -112,7 +112,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: var(--color-primary-light);
+  color: var(--color-primary-soft);
 }
 
 /*====Кнопка переключения темы====*/

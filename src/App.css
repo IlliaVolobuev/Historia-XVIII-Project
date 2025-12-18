@@ -74,5 +74,5 @@ header nav a:hover::after {
 
 /* Опционально меняем цвет текста при hover */
 header nav a:hover {
-  color: var(--color-primary-light);
+  color: var(--color-primary);
 }
