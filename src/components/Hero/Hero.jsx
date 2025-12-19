@@ -9,7 +9,7 @@ import heroImg from "../../assets/images/hero.png";
 
 export default function Hero() {
   return (
-    <section className="section-gradient" id="hero">
+    <section className="section-gradient1" id="hero">
       <div className="div-section">
         <h1 className="h1-section">
           <WordAppear
