@@ -5,13 +5,9 @@
   padding: 1rem 2rem;
   align-items: center;
   gap: 1rem;
-
-  position: sticky; /* или fixed */
   top: 0;
   z-index: 100;
-
 }
-
 
 .header-card nav {
   display: flex;

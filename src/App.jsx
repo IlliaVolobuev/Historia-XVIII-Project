@@ -11,9 +11,9 @@ import Game from "./components/Game/Game";
 
 export default function App() {
   return (
-    <BrowserRouter>
+     <BrowserRouter basename="/Historia-XVIII-Project">
       <Header />
-      <main style={{ padding: "1rem" }}>
+      <main style={{ padding: "0.5rem" }}>
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/population" element={<Population />} />
