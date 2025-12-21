@@ -6,7 +6,7 @@
   max-width: 780px;
   margin-left: auto;
   margin-right: auto;
-  color: var(--dark-blue);
+  color: #f3f9ff;
   opacity: 0.9;
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.25);
 }
