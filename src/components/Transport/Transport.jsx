@@ -3,6 +3,7 @@ import WordAppear from "../UI/WordAppear/WordAppear";
 import NeonLine from "../UI/NeonLine/NeonLine";
 import "../../index.css";
 import "./Transport.css";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
 // Импортируем картинки через React
 import transport1Img from "../../assets/images/transport1.jpg";
@@ -13,13 +14,14 @@ import transport5Img from "../../assets/images/Transport5.png";
 import transport6Img from "../../assets/images/Transport6.png";
 
 export default function Transport() {
+  const reveal = useScrollReveal();
   return (
     <section
       id="transport"
       className="section-gradient"
       style={{ padding: "4rem 2rem" }}
     >
-       <div className="div-section">
+      <div className="div-section">
         <h1 className="h1-section">
           <WordAppear
             style={{ color: "var(--poland-white)" }}
@@ -30,7 +32,7 @@ export default function Transport() {
         <img src={transport1Img} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-section">
+        <p className="p-section" ref={reveal}>
           Rozwój transportu był niezbędnym warunkiem industrializacji XVIII
           wieku. Bez sprawnego przemieszczania surowców, towarów i ludzi
           niemożliwa byłaby produkcja na dużą skalę. Rosnące miasta i fabryki
@@ -42,7 +44,7 @@ export default function Transport() {
         <img src={transport2Img} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-section">
+        <p className="p-section" ref={reveal}>
           Szczególne znaczenie miały kanały i ulepszone drogi. Transport wodny
           był tani i wydajny, dlatego kanały stały się kluczowym elementem
           gospodarki przemysłowej. Łączyły regiony produkcyjne z rynkami zbytu i
@@ -54,7 +56,7 @@ export default function Transport() {
         <img src={transport3Img} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-section">
+        <p className="p-section" ref={reveal}>
           Rozwój transportu przyczynił się do szybkiego wzrostu miast. Ośrodki
           położone przy kanałach i ważnych szlakach komunikacyjnych rozwijały
           się najszybciej, przyciągając ludność i kapitał. Migracje stały się
@@ -65,7 +67,7 @@ export default function Transport() {
         <img src={transport4Img} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-section">
+        <p className="p-section" ref={reveal}>
           Równolegle następował rozwój komunikacji. Szybszy przepływ informacji
           miał ogromne znaczenie dla handlu, administracji i wojska. Państwa
           mogły sprawniej zarządzać gospodarką i armią, co wzmacniało ich
@@ -75,7 +77,7 @@ export default function Transport() {
         <img src={transport5Img} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-section">
+        <p className="p-section" ref={reveal}>
           Industrializacja i rozwój transportu wpłynęły także na handel
           międzynarodowy. Towary mogły być przewożone szybciej i taniej na duże
           odległości, co połączyło rynki w skali światowej. Był to początek
@@ -86,11 +88,11 @@ export default function Transport() {
         <img src={transport6Img} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-section">
+        <p className="p-section" ref={reveal}>
           Długofalowe skutki tych procesów były ogromne: trwała urbanizacja,
           rozwój przemysłu, masowe społeczeństwo i ciągły postęp techniczny.
-          XVIII wiek zapoczątkował zmiany, które do dziś kształtują
-          współczesny świat.
+          XVIII wiek zapoczątkował zmiany, które do dziś kształtują współczesny
+          świat.
         </p>
       </div>
     </section>

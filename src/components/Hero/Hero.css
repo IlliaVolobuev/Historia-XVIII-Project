@@ -43,3 +43,16 @@
   /* Добавляем градиент поверх картинки */
   background-blend-mode: overlay;
 }
+.p-section1 {
+  font-size: calc(1rem + (1.25 - 1) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 500;
+  line-height: calc(1.5 + (1.7 - 1.5) * ((100vw - 320px) / (1920 - 320)));
+  padding: calc(0.9rem + (1.4 - 0.9) * ((100vw - 320px) / (1920 - 320)))
+    calc(1.1rem + (1.8 - 1.1) * ((100vw - 320px) / (1920 - 320)));
+  border-radius: calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320)));
+  box-shadow: var(--shadow-md);
+  color: var(--dark-blue);
+  background-color: var(--color-primary-soft);
+  text-shadow: var(--text-shadow-heavy);
+
+}

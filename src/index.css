@@ -152,7 +152,7 @@ a:hover {
 
 .div-section {
   text-align: center;
-  max-width: 1800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .img-section {
@@ -202,4 +202,12 @@ a:hover {
   color: var(--dark-blue);
   background-color: var(--color-primary-soft);
   text-shadow: var(--text-shadow-heavy);
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.p-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

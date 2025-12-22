@@ -3,6 +3,7 @@ import WordAppear from "../UI/WordAppear/WordAppear";
 import NeonLine from "../UI/NeonLine/NeonLine";
 import "../../index.css";
 import "./Population.css";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
 // Импортируем картинки через React
 import potatoImg from "../../assets/images/potato.png";
@@ -11,6 +12,7 @@ import city1Img from "../../assets/images/city1.png";
 import city2Img from "../../assets/images/city2.png";
 
 export default function Population() {
+  const reveal = useScrollReveal();
   return (
     <section
       id="population"
@@ -29,7 +31,7 @@ export default function Population() {
         <img src={potatoImg} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-section">
+        <p className="p-section" ref={reveal}>
           XVIII wiek przyniósł gwałtowny wzrost liczby ludności, który stał się
           jednym z najważniejszych czynników rewolucji przemysłowej. Poprawa
           wyżywienia, zwłaszcza rozpowszechnienie ziemniaka, a także rozwój
@@ -41,8 +43,7 @@ export default function Population() {
 
         <img src={doctorRowImg} alt="hero" className="img-section" />
         <NeonLine />
-
-        <p className="p-section">
+        <p className="p-section" ref={reveal}>
           Postęp techniczny miał bezpośredni wpływ na procesy demograficzne.
           Nowe narzędzia rolnicze i lepsza organizacja produkcji zwiększyły
           ilość żywności, co zmniejszyło ryzyko klęsk głodu. Jednocześnie rozwój
@@ -56,7 +57,7 @@ export default function Population() {
         <img src={city1Img} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-section">
+        <p className="p-section" ref={reveal}>
           Szybki przyrost ludności doprowadził do głębokich zmian społecznych.
           Na wsi pojawiła się nadwyżka ludności, której rolnictwo nie było w
           stanie utrzymać. Coraz więcej ludzi przenosiło się do miast, gdzie
@@ -78,7 +79,7 @@ export default function Population() {
         <img src={city2Img} alt="hero" className="img-section" />
         <NeonLine />
 
-        <p className="p-section">
+        <p className="p-section" ref={reveal}>
           Postępowi technicznemu towarzyszyły liczne sprzeczności. Z jednej
           strony poprawiał on poziom życia i umożliwiał rozwój gospodarczy, z
           drugiej prowadził do biedy, nierówności i degradacji środowiska.

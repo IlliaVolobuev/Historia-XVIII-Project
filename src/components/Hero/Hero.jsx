@@ -28,7 +28,7 @@ export default function Hero() {
         <NeonLine />
 
         <WordAppear
-          className="p-section"
+          className="p-section1"
           text={`     XVIII stulecie przyniosło Europie dynamiczny wzrost ludności,
           rewolucję agrarną oraz narodziny nowych technologii, które stały się
           fundamentem późniejszej rewolucji przemysłowej. Na polach pojawiły się
