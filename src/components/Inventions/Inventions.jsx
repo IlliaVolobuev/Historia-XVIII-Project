@@ -9,9 +9,9 @@ import useScrollReveal from "../../hooks/useScrollReveal";
 import inv1 from "../../assets/images/inventions1.png";
 import inv2 from "../../assets/images/inventions2.jpg";
 import inv3 from "../../assets/images/inventions3.jpg";
-// import glassImg from "../../assets/images/glass.jpg";
-// import warImg from "../../assets/images/war.png";
-// import islandImg from "../../assets/images/island.jpg";
+import inv4 from "../../assets/images/inv4.png";
+import inv5 from "../../assets/images/inv5.png";
+import inv6 from "../../assets/images/inv6.png";
 
 export default function Inventions() {
   const reveal = useScrollReveal();
@@ -71,8 +71,8 @@ export default function Inventions() {
           Przemysł włókienniczy miał także ogromny wpływ na rozwój miast. Manchester i Leeds w Anglii stawały się centrami produkcji tkanin, a transport surowców i gotowych produktów wymagał budowy dróg i kanałów. Ten sektor był pierwszym przykładem masowej produkcji przemysłowej, pokazując, jak technologia może zmienić codzienne życie ludzi i całą gospodarkę.
         </p>
         <NeonLine />
-{/* 
-        <img src={inv4} alt="hero" className="img-section" /> */}
+
+        <img src={inv4} alt="hero" className="img-section" />
         <NeonLine />
         <p className="p-section" ref={reveal}>
           Przed pełną industrializacją istniały manufaktury, które stanowiły etap przejściowy między tradycyjnymi warsztatami rzemieślniczymi a fabrykami przemysłowymi. W manufakturach pracowało wielu robotników, z których każdy wykonywał wyspecjalizowaną czynność – jeden przędł nić, drugi tkał materiał, a jeszcze inny przygotowywał barwniki. Taki podział pracy zwiększał wydajność i pozwalał produkować więcej niż w średniowiecznych warsztatach.
@@ -85,7 +85,7 @@ export default function Inventions() {
         </p>
         <NeonLine />
 
-        {/* <img src={inv5} alt="hero" className="img-section" /> */}
+        <img src={inv5} alt="hero" className="img-section" />
         <NeonLine />
 
         <p className="p-section" ref={reveal}>
@@ -99,7 +99,7 @@ export default function Inventions() {
         </p>
         <NeonLine />
 
-        {/* <img src={inv6} alt="hero" className="img-section" /> */}
+        <img src={inv6} alt="hero" className="img-section" />
         <NeonLine />
         <p className="p-section" ref={reveal}>
           Wynalazki XVIII wieku miały globalny wpływ, ponieważ ich skutki szybko rozprzestrzeniły się poza Europę. Maszyny parowe, mechaniczne przędzarki i nowe metody produkcji tkanin umożliwiły rozwój przemysłu w Ameryce Północnej, w koloniach oraz w Azji. Państwa, które wprowadzały innowacje techniczne, zyskiwały przewagę gospodarczą i militarną nad tymi, które pozostawały w tradycyjnym systemie rzemieślniczym.
