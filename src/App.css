@@ -1,0 +1,86 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+
+.logo {
+  width: 3rem; /* 48px */
+  height: auto; /* сохраняем пропорции */
+  padding: 0.2rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Навигационные ссылки */
+header nav a {
+  position: relative;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Псевдоэлемент для линии подчеркивания */
+header nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;      /* расстояние от текста */
+  width: 0;
+  height: 2px;       /* толщина линии */
+  background: var(--color-primary);
+  box-shadow: 0 0 4px var(--color-primary), 0 0 8px var(--color-primary-light);
+  transition: width 0.35s ease, box-shadow 0.35s ease;
+  border-radius: 2px;
+}
+
+/* Hover эффект: растягиваем линию и усиливаем glow */
+header nav a:hover::after {
+  width: 100%;
+  box-shadow: 0 0 8px var(--color-primary), 0 0 16px var(--color-primary-light);
+}
+
+/* Опционально меняем цвет текста при hover */
+header nav a:hover {
+  color: var(--color-primary);
+}

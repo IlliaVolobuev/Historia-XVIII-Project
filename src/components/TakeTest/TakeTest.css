@@ -1,0 +1,34 @@
+.task-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  background-color: var(--color-bg-soft);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+
+.result-block {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  background: var(--gradient-main);
+  color: var(--dark-blue);
+  box-shadow: var(--shadow-lg);
+}
+
+.result-block h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: var(--text-shadow-heavy);
+}
+
+.result-block p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}

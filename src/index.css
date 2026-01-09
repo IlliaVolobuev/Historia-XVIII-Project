@@ -1,0 +1,219 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Цветовая палитра  цветов */
+  --blue-1: #04addc;
+  --blue-2: #63e4fb;
+  --blue-3: #89dcf0;
+  --blue-4: #1db9ce;
+  --blue-5: #bceadf;
+  --blue-6: #1b47a5;
+  --dark-blue: #142a3a;
+  --green-accent: #629a34;
+  --fiolent: #5f7ab7;
+
+  /* Цвета для польского флага */
+  --poland-white: #ffffff; /* верхняя белая часть */
+  --poland-red: #dc143c; /* нижняя красная часть */
+  --poland-red2: #f91a47;
+
+  /* ===== Светлая тема (по умолчанию) ===== */
+  --color-bg: #ffffff;
+  --color-bg-soft: #63e4fb;
+  --color-bg-card: #f0fafd;
+  --color-bg-card2: #c5ebf7;
+
+  --color-text: #142a3a;
+  --color-text-soft: #375569;
+
+  --color-primary: var(--blue-1);
+  --color-primary-light: var(--blue-3);
+  --color-primary-soft: var(--blue-2);
+  --color-primary-dark: var(--blue-4);
+  --color-sekond: var(--blue-5);
+  --color-sekond-soft: var(--blue-6);
+  --color-sekond-dark: var(--fiolent);
+  --color-accent: var(--green-accent);
+
+  /* Тени */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.09);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.14);
+  --text-shadow-main: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --text-shadow-heavy: 9px 11px 8px rgb(23 28 29 / 45%);
+  /* Градиенты */
+  --gradient-main: linear-gradient(
+    135deg,
+    var(--blue-2) 0%,
+    var(--blue-3) 20%,
+    var(--blue-1) 40%,
+    var(--green-accent) 60%,
+    var(--fiolent) 80%,
+    var(--blue-5) 100%
+  );
+
+  --gradient-accent: linear-gradient(135deg, #629a34, #8dcf5d);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* ===== ТЁМНАЯ ТЕМА ===== */
+.dark {
+  --color-bg: #0c1b25;
+  --color-bg-soft: #112634;
+  --color-bg-card: #142a3a;
+  --color-bg-card2: #132635;
+
+  --color-text: #f3f9ff;
+  --color-text-soft: #d1e4ef;
+
+  --color-primary: var(--blue-5);
+  --color-primary-light: var(--blue-6);
+  --color-primary-soft: var(--blue-1);
+  --color-accent: var(--fiolent);
+  --color-sekond: var(--blue-2);
+
+  /* Тени тёмные + светящиеся */
+  --shadow-sm: 0 0 6px rgba(99, 228, 251, 0.15);
+  --shadow-md: 0 0 12px rgba(4, 173, 220, 0.25);
+  --shadow-lg: 0 0 22px rgba(4, 173, 220, 0.45);
+  --shadow-xxl: 0 0 32px rgba(4, 173, 220, 0.65);
+  --text-shadow-main: 0 0 8px rgba(99, 228, 251, 0.45);
+  --text-shadow-heavy: 9px 11px 8px rgb(23 28 29 / 45%);
+  --text-shadow-heavy: 9px 11px 8px rgba(4, 173, 220, 0.35);
+  /* Неоновые градиенты */
+  --gradient-main: linear-gradient(
+    135deg,
+    var(--dark-blue) 0%,
+    var(--blue-6) 25%,
+    var(--fiolent) 50%,
+    var(--blue-4) 75%,
+    var(--blue-3) 100%
+  );
+
+  --gradient-accent: linear-gradient(
+    135deg,
+    rgba(98, 154, 52, 0.9),
+    rgba(140, 212, 81, 0.9)
+  );
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-primary-soft);
+}
+
+/*====Кнопка переключения темы====*/
+.theme-toggle {
+  padding: calc(0.3em + (0.4 - 0.3) * ((100vw - 320px) / (1920 - 320)))
+    calc(0.8em + (1 - 0.8) * ((100vw - 320px) / (1920 - 320)));
+  border-radius: calc(4px + (6 - 4) * ((100vw - 320px) / (1920 - 320)));
+  border: 1px solid var(--color-primary);
+}
+
+.theme-toggle:hover {
+  background: var(--color-primary-soft);
+  color: var(--dark-blue);
+}
+
+/*Карточки*/
+
+/*===Неоновая карточка===*/
+.card-glow {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-primary);
+  border-radius: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
+  box-shadow: 0 0 calc(8px + (14 - 8) * ((100vw - 320px) / (1920 - 320)))
+    rgba(99, 228, 251, 0.4);
+}
+
+/*Градиентные блоки / секции*/
+
+.section-gradient {
+  padding: calc(2rem + (4 - 2) * ((100vw - 320px) / (1920 - 320)))
+    calc(0.4rem + (0.5 - 0.4) * ((100vw - 320px) / (1920 - 320)));
+  background: var(--gradient-main);
+  color: var(--dark-blue);
+  border-radius: calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320)));
+  box-shadow: var(--shadow-lg);
+}
+
+.div-section {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.img-section {
+  width: 100%;
+  max-width: calc(320px + (1200 - 320) * ((100vw - 320px) / (1920 - 320)));
+  margin: calc(1rem + (2 - 1) * ((100vw - 320px) / (1920 - 320))) auto;
+  border: calc(2px + (4 - 2) * ((100vw - 320px) / (1920 - 320))) solid
+    var(--blue-1);
+  border-radius: calc(18px + (40 - 18) * ((100vw - 320px) / (1920 - 320)));
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease, border-color 0.45s ease, filter 0.45s ease;
+  display: block;
+  overflow: hidden;
+  filter: brightness(0.96);
+}
+
+/* Hover эффект */
+.img-section:hover {
+  transform: scale(1.03);
+  border-color: var(--blue-2);
+  box-shadow: 0 20px 45px rgba(0, 162, 210, 0.25),
+    0 6px 15px rgba(0, 0, 0, 0.15);
+  filter: brightness(1);
+}
+
+/* ЛЁГКИЙ эффект внутреннего сияния */
+.img-section:hover {
+  box-shadow: 0 20px 40px rgba(4, 173, 220, 0.25),
+    0 6px 15px rgba(0, 0, 0, 0.15), inset 0 0 25px rgba(99, 228, 251, 0.35);
+}
+.h1-section {
+  font-size: calc(1.8rem + (3 - 1.8) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 800;
+  margin-bottom: calc(0.6rem + (1 - 0.6) * ((100vw - 320px) / (1920 - 320)));
+  text-shadow: var(--text-shadow-heavy);
+}
+
+.p-section {
+  font-size: calc(1rem + (1.25 - 1) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 500;
+  line-height: calc(1.5 + (1.7 - 1.5) * ((100vw - 320px) / (1920 - 320)));
+  padding: calc(0.9rem + (1.4 - 0.9) * ((100vw - 320px) / (1920 - 320)))
+    calc(1.1rem + (1.8 - 1.1) * ((100vw - 320px) / (1920 - 320)));
+  border-radius: calc(10px + (14 - 10) * ((100vw - 320px) / (1920 - 320)));
+  box-shadow: var(--shadow-md);
+  color: var(--dark-blue);
+  background-color: var(--color-primary-soft);
+  text-shadow: var(--text-shadow-heavy);
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.p-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

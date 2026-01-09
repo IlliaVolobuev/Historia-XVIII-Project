@@ -1,0 +1,21 @@
+.header-card {
+  display: flex;
+  flex-wrap: wrap; /* позволяет переносить элементы на новую строку */
+  justify-content: center;
+  padding: 1rem 2rem;
+  align-items: center;
+  gap: 1rem;
+  top: 0;
+  z-index: 100;
+}
+
+.header-card nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; /* ссылки могут переноситься */
+  gap: 1.5rem;
+  flex-grow: 1; /* чтобы занимать доступное место */
+}
+.theme-toggle {
+  margin-left: auto; /* отодвигаем кнопку вправо */
+}
