@@ -37,9 +37,14 @@
    =============================== */
 .player {
   position: absolute;
-  width: 150px;
-  height: 182px;
+  width: 105px; /* уменьшенный размер */
+  height: 128px; /* уменьшенный размер */
   background-image: url("../../assets/images/ball1.png");
+
+  /* добавляем эти строки */
+  background-size: contain;   /* масштабируем картинку под размер блока */
+  background-repeat: no-repeat; /* чтобы не дублировалась */
+  background-position: center;  /* центрируем картинку */
 }
 
 .enemy {

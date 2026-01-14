@@ -13,13 +13,14 @@ const TRACKS = [music1, music2, music3, music4];
 const PLAYER_STEP = 3;
 const ENEMY_SPAWN_INTERVAL = 1500;
 const PLAYER_SIZE = {
-  width: 150,
-  height: 182,
-  circleH: 150,
-  squareW: 32,
-  squareH: 32,
+  width: 105,
+  height: 128,
+  circleH: 105,
+  squareW: 22,
+  squareH: 22,
 };
-const ENEMY_SIZE = 60;
+
+const ENEMY_SIZE = 50;
 const TRACK_CHANGE_THRESHOLD = 10;
 
 const ENEMY_TYPES = {
